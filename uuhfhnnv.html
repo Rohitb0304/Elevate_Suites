@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .content {
+      overflow: hidden;
+      max-height: 100px; /* Adjust this value based on your content size */
+      transition: max-height 0.3s ease;
+    }
+
+    .show-more-btn,
+    .show-less-btn {
+      cursor: pointer;
+      color: #0984e3;
+      font-size: 1rem;
+      display: block;
+    }
+
+    .show-less-btn {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec nibh id nisl fermentum malesuada.
+      In eu elit vel neque sollicitudin dictum. Integer vitae risus eu ipsum feugiat egestas ut at dui.
+      Nulla facilisi. Sed aliquet nibh in ipsum posuere ultrices. In hendrerit turpis vel enim pharetra, eget elementum enim interdum.
+      Phasellus aliquam odio et neque condimentum, sit amet blandit velit scelerisque. Proin vitae tellus at mauris aliquet fermentum vel a nibh.
+      Sed eget est odio. Integer ut vestibulum velit, vel efficitur nisl. Etiam sit amet lectus nec libero varius ultricies.
+    </p>
+  </div>
+  <button class="show-more-btn" onclick="toggleDescription()">Show More</button>
+  <button class="show-less-btn" onclick="toggleDescription()">Show Less</button>
+
+  <script>
+    function toggleDescription() {
+      const content = document.querySelector('.content');
+      const showMoreBtn = document.querySelector('.show-more-btn');
+      const showLessBtn = document.querySelector('.show-less-btn');
+
+      content.classList.toggle('expanded');
+
+      if (content.classList.contains('expanded')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        showMoreBtn.style.display = 'none';
+        showLessBtn.style.display = 'block';
+      } else {
+        content.style.maxHeight = '100px'; // Adjust this value based on your content size
+        showMoreBtn.style.display = 'block';
+        showLessBtn.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

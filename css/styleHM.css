@@ -1,0 +1,91 @@
+.logo img {
+  width: 0px; /* Adjust the width as needed */
+  height: 0px; /* Maintain aspect ratio */
+  position: absolute;
+}
+.content flex_space{
+  background-color:#2f4550 ;
+}
+/* Global styles */
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+body {
+    background-image: url('hotel-image.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+  .container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #cea4ca;
+    align-items: center; /* Update background color here */
+  }
+  
+  /* Rest of the CSS code remains the same */
+  
+  
+  h2 {
+    color: #333;
+  }
+  
+  /* Button styles */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  /* View Customers styles */
+  .view-customers {
+    margin-top: 20px;
+  }
+  
+  .view-customers h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .view-customers table td:first-child {
+    font-weight: bold;
+  }
+  .container1{
+    padding: 20%;
+    margin-top: 20px;
+    margin-left: auto;
+  }
+  
+  
